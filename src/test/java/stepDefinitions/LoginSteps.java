@@ -66,6 +66,7 @@ public class LoginSteps {
 
 	{		
 		lp.clickLoginButton();
+		Thread.sleep(2000);		
 	}
 	
 	
@@ -74,10 +75,9 @@ public class LoginSteps {
 	public void compare_error_msgs(String expected_text) throws InterruptedException 
 	
 	{	
-		Thread.sleep(15);
-		String actual_text = driver.findElement(By.xpath("(//a[normalize-space()='Lozinka zaboravljena?'])[1]")).getText();
+	//	String actual_text = driver.findElement(By.xpath("(//a[normalize-space()='Lozinka zaboravljena?'])[1]")).getText();
+		String actual_text = driver.findElement(By.className("ErrorFormField_error__hm4lk")).getText();
 		Assert.assertEquals(expected_text, actual_text);	
-
 	}
 										
 	
