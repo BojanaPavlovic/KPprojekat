@@ -75,7 +75,7 @@ public class LoginSteps {
 	
 	{	
 		Thread.sleep(15);
-		String actual_text = driver.findElement(By.xpath("\"(//a[normalize-space()='Lozinka zaboravljena?'])[1]")).getText();
+		String actual_text = driver.findElement(By.xpath("(//a[normalize-space()='Lozinka zaboravljena?'])[1]")).getText();
 		Assert.assertEquals(expected_text, actual_text);	
 
 	}
