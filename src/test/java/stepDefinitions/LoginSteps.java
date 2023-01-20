@@ -84,7 +84,7 @@ public class LoginSteps {
 	public void close_the_browser()
 
 	{		
-		driver.quit();;	
+		driver.quit();	
 	}
 	
 }
