@@ -70,12 +70,10 @@ public class LoginSteps {
 	}
 	
 	
-	@Then("page text should contains {string}")		
-
+	@Then("text should contains {string}")		
 	public void compare_error_msgs(String expected_text) throws InterruptedException 
 	
 	{	
-	//	String actual_text = driver.findElement(By.xpath("(//a[normalize-space()='Lozinka zaboravljena?'])[1]")).getText();
 		String actual_text = driver.findElement(By.className("ErrorFormField_error__hm4lk")).getText();
 		Assert.assertEquals(expected_text, actual_text);	
 	}
