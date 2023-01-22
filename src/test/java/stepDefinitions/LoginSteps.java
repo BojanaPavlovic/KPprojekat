@@ -44,7 +44,7 @@ public class LoginSteps {
 
 
 	@And("user click button which navigate them to the login form")
-	public void click_category() throws InterruptedException 
+	public void click_category()  
 
 	{		
 		lp.navigate();
@@ -62,7 +62,7 @@ public class LoginSteps {
 	
 	
 	@And("user click on the login button")
-	public void click_loging() 
+	public void click_loging() throws InterruptedException 
 
 	{		
 		lp.clickLoginButton();
@@ -71,7 +71,7 @@ public class LoginSteps {
 	
 	
 	@Then("text should contains {string}")		
-	public void compare_error_msgs(String expected_text) throws InterruptedException 
+	public void compare_error_msgs(String expected_text) 
 	
 	{	
 		String actual_text = driver.findElement(By.className("ErrorFormField_error__hm4lk")).getText();
