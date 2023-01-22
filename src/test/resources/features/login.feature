@@ -23,7 +23,7 @@ Feature: Login page
 		Examples:
 		
 			|         email	       |	 password	    |		    expectedMsg		                 |													
-			|   bojka.bg@gmail.com |			    |	Polje ne može biti prazno.			 |								
+			|                      | Javolimgrafiku123	    |	Polje ne može biti prazno.			 |								
 			|   bojka.bg@gmail.com | netacna lozinka            |	Pogrešna lozinka				 |																			   													    								 						
 			|   ivanS89@gmail.com  | Javolimgrafiku123	    |	Nalog sa ovom e-mail adresom nije pronađen	 |							
 			|		       | !@$FDSFGEFK     	    |	Polje ne može biti prazno.			 |
