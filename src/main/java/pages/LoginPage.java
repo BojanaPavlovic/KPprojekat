@@ -109,14 +109,12 @@ public class LoginPage
 	{		
 		clickElement(Login_button);			
 	}
-   public String Text_Lozinka_Zaboravljena() 
 
-   {
-	   return driver.findElement(By.xpath("(//a[normalize-space()='Lozinka zaboravljena?'])[1]")).getText();	   
-   }
    
-   public void Tear_Down() {
+   	public void Tear_Down() 
+		
+	{
 	   driver.quit();
-   }
+   	}
    
 }
